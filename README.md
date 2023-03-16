@@ -79,5 +79,5 @@ connect to the instance.
 
 ## TODO
 
-[ ] Create a service to facilitate stopping the instance instead of destroying the whole infrastructure
-[ ] Add support for TLS
+- [ ] Create a service to facilitate stopping the instance instead of destroying the whole infrastructure
+- [ ] Add support for TLS
