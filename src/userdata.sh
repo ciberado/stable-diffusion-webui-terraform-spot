@@ -28,7 +28,6 @@ cd /home/ubuntu
 git clone https://github.com/marshmellow77/stable-diffusion-webui.git
 echo "fastapi==0.90.0" >> stable-diffusion-webui/requirements_versions.txt
 
-bash stable-diffusion-webui/setup.sh -y
 
 cat << EOF > /etc/systemd/system/webui.service
 [Unit]
@@ -45,5 +44,7 @@ Group=ubuntu
 WantedBy=multi-user.target
 EOF
 
-sudo systemctl start webui
 sudo systemctl enable webui
+
+bash stable-diffusion-webui/setup.sh -y
+# sudo systemctl start webui
