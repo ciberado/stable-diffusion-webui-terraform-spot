@@ -115,7 +115,7 @@ module "app" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = var.app_instance_type
   vpc_security_group_ids      = [aws_security_group.app_sg.id]
-  subnet_id                   = module.vpc.public_subnets[0]
+  subnet_id                   = module.vpc.public_subnets[1]
   associate_public_ip_address = true
 
   iam_instance_profile = aws_iam_instance_profile.app_profile.name
