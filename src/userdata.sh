@@ -29,6 +29,25 @@ git clone https://github.com/marshmellow77/stable-diffusion-webui.git
 echo "fastapi==0.90.0" >> stable-diffusion-webui/requirements_versions.txt
 
 
+curl -L 'https://huggingface.co/acheong08/f222/resolve/main/f222.ckpt' \
+     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/f222.ckpt
+
+# keyword: mdjrny-v4 style
+curl -L 'https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.ckpt' \
+     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/mdjrny-v4.ckpt
+
+
+curl -L 'https://civitai.com/api/download/models/5636?type=Pruned%20Model&format=SafeTensor' \
+     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/dreamshaper.ckpt
+
+# keyword: nvinkpunk
+curl -L 'https://huggingface.co/Envvi/Inkpunk-Diffusion/resolve/main/Inkpunk-Diffusion-v2.ckpt' \
+     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/inkpunk-diffusion.ckpt
+
+curl -L 'https://huggingface.co/SG161222/Realistic_Vision_V2.0/resolve/main/Realistic_Vision_V2.0.ckpt' \
+     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/realistic-vision-v2.ckpt
+
+
 cat << EOF > /etc/systemd/system/webui.service
 [Unit]
 Description=webui
@@ -48,3 +67,4 @@ sudo systemctl enable webui
 
 bash stable-diffusion-webui/setup.sh -y
 # sudo systemctl start webui
+
