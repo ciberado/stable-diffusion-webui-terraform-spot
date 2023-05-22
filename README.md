@@ -75,7 +75,6 @@ terraform destroy --var region=eu-west-1 --var owner=$USER
 
 - [F222](https://civitai.com/models/1188/f222)
 - [OpenJourney](https://civitai.com/models/86/openjourney-aka-midjourney-v4)
-- [DreamShaper](https://civitai.com/models/4384/dreamshaper)
 - [InkPunk](https://civitai.com/models/1087/inkpunk-diffusion)
 - [Realistic Vision](https://civitai.com/models/4201/realistic-vision-v20)
 

@@ -37,9 +37,6 @@ curl -L 'https://huggingface.co/prompthero/openjourney/resolve/main/mdjrny-v4.ck
      -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/mdjrny-v4.ckpt
 
 
-curl -L 'https://civitai.com/api/download/models/5636?type=Pruned%20Model&format=SafeTensor' \
-     -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/dreamshaper.ckpt
-
 # keyword: nvinkpunk
 curl -L 'https://huggingface.co/Envvi/Inkpunk-Diffusion/resolve/main/Inkpunk-Diffusion-v2.ckpt' \
      -o /home/ubuntu/stable-diffusion-webui/models/Stable-diffusion/inkpunk-diffusion.ckpt
